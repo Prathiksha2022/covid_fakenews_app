@@ -35,10 +35,6 @@ def predict():
     # return prediction
 
 
-# @app.route('/predict/', methods=['GET','POST'])
-# def api():
-# text = request.args.get("text")
-# prediction = predict(text)
-# return jsonify(prediction=prediction)
+
 if __name__ == "__main__":
     app.run()
