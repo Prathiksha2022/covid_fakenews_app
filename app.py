@@ -4,6 +4,7 @@ import re
 from nltk import PorterStemmer
 import nltk
 nltk.download('stopwords')
+from nltk.corpus import stopwords
 ps = PorterStemmer()
 # Load the logistic regression model from the pkl file
 with open('model2.pkl', 'rb') as f:
