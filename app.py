@@ -2,7 +2,8 @@ import pickle
 from flask import Flask, request, jsonify
 import re
 from nltk import PorterStemmer
-from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
 ps = PorterStemmer()
 # Load the logistic regression model from the pkl file
 with open('model2.pkl', 'rb') as f:
